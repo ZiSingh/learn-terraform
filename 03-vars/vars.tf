@@ -16,6 +16,6 @@ output "sample1" {
 
 ## Sometime if varaible/any reference with the combination of some other string then we have to access those in ${}
 
-output "sample-ext" {
+output "sample2" {
   value = "Value of Sample & Sample1 - ${var.sample} - ${var.sample1}"
 }
