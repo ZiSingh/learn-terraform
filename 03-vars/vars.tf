@@ -38,3 +38,8 @@ variable "course" {
   default = "DevOps Training"
 }
 
+
+output "course" {
+  value = var.course
+}
+
