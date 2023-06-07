@@ -71,7 +71,7 @@ output "courses" {
   value = var.courses
 }
 
-output "course_details" {
+output "course_details1" {
   value = var.course_details
 }
 
