@@ -19,3 +19,22 @@ output "sample1" {
 output "sample-ext" {
   value = "Value of Sample & Sample1 - ${var.sample} - ${var.sample1}"
 }
+
+# Variable Data types
+# 1. string
+# 2. number
+# 3. Boolean
+
+# Variable Types
+# In Ansible - 1. Plain Key, Value, 2. List 3. Map/Dict
+
+# In Terraform
+# 1. Plain
+# 2. List
+# 3. Map
+
+## Plain
+variable "course" {
+  default = "DevOps Training"
+}
+
