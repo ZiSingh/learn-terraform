@@ -51,6 +51,6 @@ output "course" {
   value = var.course
 }
 output "courses" {
-  value = var.courses[2]
+  value = var.courses[0]
 }
 
