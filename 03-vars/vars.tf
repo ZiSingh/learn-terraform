@@ -38,8 +38,19 @@ variable "course" {
   default = "DevOps Training"
 }
 
+# List
+variable "courses" {
+  default = [
+    "DevOps",
+    "AWS",
+    "Python"
+  ]
+}
 
 output "course" {
   value = var.course
+}
+output "courses" {
+  value = var.courses[2]
 }
 
