@@ -78,7 +78,3 @@ output "course_details" {
 output "course_details" {
   value = var.course_details[DevOps]
 }
-
-output "course details" {
-  value = var.courses[2]
-}
