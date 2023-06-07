@@ -75,3 +75,10 @@ output "course_details" {
   value = var.course_details
 }
 
+output "course_details" {
+  value = var.course_details[DevOps]
+}
+
+output "Accessing a Particular course" {
+  value = var.courses[2]
+}
