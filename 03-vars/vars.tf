@@ -79,6 +79,6 @@ output "course_details" {
   value = var.course_details[DevOps]
 }
 
-output "course details " {
+output "course details" {
   value = var.courses[2]
 }
