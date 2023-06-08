@@ -92,3 +92,8 @@ output "env" {
   value = var.env
 }
 
+#to demonstrate the terraform.tfvars file
+variable "url" {}
+output "url" {
+  value =var.url
+}
