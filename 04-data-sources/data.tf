@@ -18,7 +18,7 @@ output "price" {
 
 ## now i need to print the id of the AWS Region
 
-output "AWS Region" {
+output "AWS_Region" {
   value = data.aws_ec2_spot_price.example.availability_zone
 }
 
@@ -30,7 +30,7 @@ output "spot_price_timestamp"{
 
 #info about the provider the Spot Price value was published.
 
-output "provider's details" {
+output "provider_details" {
   value = data.aws_ec2_spot_price.example.provider
 
 }
