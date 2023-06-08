@@ -83,5 +83,5 @@ output "course_details1" {
 #}
 
 output "course_details" {
-  value = var.course_details[DevOps]
+  value = var.course_details["DevOps"]
 }
