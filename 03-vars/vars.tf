@@ -74,9 +74,6 @@ output "course" {
 output "courses" {
   value = var.courses[2]
 }
-output "course_details1" {
-  value = var.course_details
-}
 
 #output "course_details" {
 #  value = var.course_details
