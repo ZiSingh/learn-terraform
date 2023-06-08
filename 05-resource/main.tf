@@ -21,8 +21,8 @@
 #  visibility = "public"
 #}
 
-resource "github_repository" "example" {
-  name        = "example"
+resource "github_repository" "ZiSingh" {
+  name        = "ZiSingh"
   description = "My awesome codebase"
 
   visibility = "public"
