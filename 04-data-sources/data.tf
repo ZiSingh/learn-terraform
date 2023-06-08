@@ -34,5 +34,10 @@ output "spot_price_timestamp"{
 #  value = data.aws_ec2_spot_price.example.provider
 #
 #}
+output "the_provider" {
+  value = data.aws_ec2_spot_price.example.provider
+}
 
-
+output "Instance_Type" {
+  value = data.aws_ec2_spot_price.example.instance_type
+}
