@@ -70,7 +70,7 @@ output "course" {
 #output "courses" {
 #  value = var.courses
 #}
-
+##here you get the particular value from the list (0,1,2)
 output "courses" {
   value = var.courses[2]
 }
@@ -79,6 +79,7 @@ output "courses" {
 #  value = var.course_details
 #}
 
+## here you are getting the from the Map (DevOps/ AWS) so here within ["DevOps"] use are choosing DevOps
 output "course_details" {
   value = var.course_details["DevOps"]
 }
