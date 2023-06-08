@@ -63,3 +63,17 @@ data "aws_ami" "example" {
 output "ami" {
   value = data.aws_ami.example.id
 }
+
+#how do i print the ami id of my when i have ami name
+
+
+
+data "aws_ami" "example" {
+    owners      = ["973714476881"]
+    most_recent = true
+    name_regex  = "Centos-8-DevOps-Practice"
+  }
+
+output "ami" {
+  value = data.aws_ami.example.id
+}
