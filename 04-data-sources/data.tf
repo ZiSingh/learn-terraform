@@ -41,3 +41,13 @@ output "spot_price_timestamp" {
 output "Instance_Type" {
   value = data.aws_ec2_spot_price.example.instance_type
 }
+
+# to display the security group id
+
+data "aws_security_group" "selected" {
+  name = "allow-all"
+}
+
+output "sgid" {
+  value = data.aws_security_group.selected.id
+}
