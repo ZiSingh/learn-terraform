@@ -14,9 +14,22 @@
 #  name_regex  = "Centos-8-DevOps-Practice"
 #}
 
-resource "github_repository" "Zsingh-repo-1" {
-  name        = "Zsingh-repo-1"
-  description = "Zi Singh awesome codebase"
+#resource "github_repository" "Zsingh-repo-1" {
+#  name        = "Zsingh-repo-1"
+#  description = "Zi Singh awesome codebase"
+#
+#  visibility = "public"
+#}
+
+resource "github_repository" "example" {
+  name        = "example"
+  description = "My awesome codebase"
 
   visibility = "public"
+
+  template {
+    owner                = "github"
+    repository           = "terraform-template-module"
+    include_all_branches = true
+  }
 }
