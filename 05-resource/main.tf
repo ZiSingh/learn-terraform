@@ -1,5 +1,5 @@
 #how do i launch an AWS EC2 instance using ami id
-#resource "aws_instance" "web" {
+resource "aws_instance" "web" {
   ami           = data.aws_ami.example.id
   instance_type = "t3.micro"
 
