@@ -18,3 +18,7 @@ output "sample1" {
   value = 1000
 
 }
+
+output "sample2" {
+  value = "Hellow World"
+}
