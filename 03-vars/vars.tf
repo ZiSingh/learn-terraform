@@ -7,7 +7,7 @@ variable "sample1" {
 }
 
 #plain variable
-variable "Course" {
+variable "course" {
   default = "DevOps Training"
 }
 
