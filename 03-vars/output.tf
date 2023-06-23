@@ -43,7 +43,7 @@ output "Third_Course" {
 
 
 output "course_details_DevOps" {
-  value = var.Course_Details[course[0]]
+  value = var.Course_Details[Courses[0]]
 }
 
 #"",
