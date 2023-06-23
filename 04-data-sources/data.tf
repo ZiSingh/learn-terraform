@@ -30,20 +30,10 @@ data "aws_ami" "example" {
 
 ## to display the vpc id
 #
-
+variable "vpc_id" {}
 data "aws_vpcs" "vpc" {
   count = length(data.aws_vpcs.vpc.ids)
   id    = tolist(data.aws_vpcs.vpc.ids)[count.index]
+  vpc_id = data.aws_vpc.foo[count.index].id
 }
-
-#data "aws_vpcs" "vpcid" {
-#  tags = {
-#    name = "Default VPC"
-#  }
-#}
-#
-
-
-
-
 
