@@ -12,15 +12,6 @@ data "aws_ec2_spot_price" "example" {
 
 
 
-#info about the provider the Spot Price value was published.
-#
-#output "provider_details" {
-#  value = data.aws_ec2_spot_price.example.provider
-#
-#}
-#output "the_provider" {
-#  value = data.aws_ec2_spot_price.example.provider
-#}
 
 #output "Instance_Type" {
 #  value = data.aws_ec2_spot_price.example.instance_type
