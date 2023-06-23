@@ -38,3 +38,14 @@ output "Second_Course" {
 output "Third_Course" {
   value = var.Courses[2]
 }
+
+#now i want to display the courses details of a particular course
+
+
+output "course_details_DevOps" {
+  value = var.Course_Details[course[0]]
+}
+
+"",
+"AWS",
+"Python"
