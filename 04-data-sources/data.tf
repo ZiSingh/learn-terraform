@@ -32,7 +32,7 @@ data "aws_ami" "example" {
 #
 data "aws_vpcs" "vpcid" {
   tags = {
-    service = "Default VPC"
+    name = "Default VPC"
   }
 }
 
