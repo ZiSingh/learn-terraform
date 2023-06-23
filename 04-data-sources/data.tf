@@ -17,7 +17,7 @@ data "aws_ec2_spot_price" "example" {
 #
 data "aws_security_group" "selected" {
   name = "allow-all"
-#}
+}
 #
 #
 ##to display the ami id here owner=account number of aws
