@@ -9,6 +9,5 @@ output "sample1" {
 }
 
 output "Sample-Ext" {
-  value = "Value of Sample - ${sample}"
-  value = "Value of Sample1 - ${sample1}"
+  value = "Value of Sample - ${sample} & Value of Sample1 - ${sample1}"
 }
