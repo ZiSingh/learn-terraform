@@ -10,4 +10,5 @@ output "sample1" {
 
 output "Sample-Ext" {
   value = "The value of Sample is ${var.sample}"
+  value = "The value of Sample1 is ${var.sample1}"
 }
