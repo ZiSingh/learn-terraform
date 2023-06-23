@@ -27,3 +27,7 @@ output "sgid" {
 output "VPC_id" {
   value = data.aws_vpcs.vpcid.ids
 }
+
+output "ami_id" {
+  value = data.aws_ami.example.id
+}
