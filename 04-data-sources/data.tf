@@ -34,6 +34,6 @@ variable "vpc_id" {}
 data "aws_vpcs" "vpc" {
   count = length(data.aws_vpcs.vpc.ids)
   id    = tolist(data.aws_vpcs.vpc.ids)[count.index]
-  vpc_id = data.aws_vpcs.vpc.ids[count.index].id
+  vpc_id = data.aws_vpcs.vpc.ids[count.index]
 }
 
