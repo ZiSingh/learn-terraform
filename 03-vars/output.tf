@@ -23,3 +23,9 @@ output "Courses" {
 output "Course_Details" {
   value = var.Course_Details
 }
+
+#now i want to display the courses in serial wise
+
+output "First_Course" {
+  value = var.Courses[0]
+}
