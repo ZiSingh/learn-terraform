@@ -28,7 +28,5 @@ output "ami_id" {
   value = data.aws_ami.example.id
 }
 
-output "vpcid" {
-  value = data.aws_vpc.selected.id
-}
-
+ooutput "vpc" {
+  value = data.aws_vpcs.vpc.ids

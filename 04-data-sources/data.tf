@@ -31,7 +31,8 @@ data "aws_ami" "example" {
 ## to display the vpc id
 #
 
-data "aws_vpc" "selected" {
+data "aws_vpcs" "vpc" {
 
-  name = "Default VPC"
+}
+
 }
