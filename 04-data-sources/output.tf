@@ -28,5 +28,5 @@ output "ami_id" {
   value = data.aws_ami.example.id
 }
 
-ooutput "vpc" {
+output "vpc" {
   value = data.aws_vpcs.vpc.ids
