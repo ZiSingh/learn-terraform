@@ -42,17 +42,17 @@ output "Third_Course" {
 #now i want to display the courses details of a particular course
 
 
-output "course_details_DevOps" {
-  value = var.Course_Details["DevOps"]
-}
-
-output "course_details_AWS" {
-  value = var.Course_Details["AWS"]
-}
-
-output "course_details_Python" {
-  value = var.Course_Details["Python"]
-}
+#output "course_details_DevOps" {
+#  value = var.Course_Details["DevOps"]
+#}
+#
+#output "course_details_AWS" {
+#  value = var.Course_Details["AWS"]
+#}
+#
+#output "course_details_Python" {
+#  value = var.Course_Details["Python"]
+#}
 
 #now i want to display the courses details of a particular course without naming it
 output "course_details_DevOps" {
