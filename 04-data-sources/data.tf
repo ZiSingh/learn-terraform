@@ -32,6 +32,6 @@ data "aws_ami" "example" {
 #
 
 data "aws_vpc" "selected" {
-  default = Yes
+
   name = "Default VPC"
 }
