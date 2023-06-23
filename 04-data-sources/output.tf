@@ -30,3 +30,5 @@ output "ami_id" {
 
 output "vpc" {
   value = data.aws_vpcs.vpc.ids
+
+}
