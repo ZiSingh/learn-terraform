@@ -37,12 +37,12 @@ data "aws_vpcs" "vpc" {
   id    = tolist(data.aws_vpcs.vpc.ids)[count.index]
 }
 
-data "aws_vpcs" "vpcid" {
-  tags = {
-    name = "Default VPC"
-  }
-}
-
+#data "aws_vpcs" "vpcid" {
+#  tags = {
+#    name = "Default VPC"
+#  }
+#}
+#
 
 
 
