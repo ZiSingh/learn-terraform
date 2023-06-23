@@ -30,6 +30,13 @@ data "aws_ami" "example" {
 
 ## to display the vpc id
 #
+data "aws_vpcs" "dvpc" {}
+
+data "aws_vpc" "dvpc" {
+  count = length(data.aws_vpcs.dvpc.ids)
+  id    = tolist(data.aws_vpcs.dvpc.ids)[count.index]
+}
+
 data "aws_vpcs" "vpcid" {
   tags = {
     name = "Default VPC"
