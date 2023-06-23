@@ -66,3 +66,11 @@ output "course_details_AWS" {
 output "course_details_Python" {
   value = var.Course_Details[var.Courses[2]]
 }
+
+#now i will be calling the variables from dev.tfvars and prod.tfvars
+
+variable "env" {}
+
+output "env" {
+  value = var.env
+}
