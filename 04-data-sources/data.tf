@@ -13,10 +13,6 @@ data "aws_ec2_spot_price" "example" {
 
 
 
-#output "Instance_Type" {
-#  value = data.aws_ec2_spot_price.example.instance_type
-#}
-#
 ## to display the security group id
 #
 #data "aws_security_group" "selected" {
