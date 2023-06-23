@@ -9,5 +9,5 @@ output "sample1" {
 }
 
 output "Sample-ext" {
-  value = "Value of Sample - var.sample"
+  value = "Value of Sample - $(var.sample}"
 }
