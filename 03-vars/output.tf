@@ -13,13 +13,13 @@ output "Sample-Ext" {
 }
 
 output "Course" {
-  value = "var.course"
+  value = "var.Course"
 }
 
 output "Courses" {
-  value = "var.courses"
+  value = "var.Courses"
 }
 
 output "Course_Details" {
-  value = "var.course_details"
+  value = "var.Course_Details"
 }
