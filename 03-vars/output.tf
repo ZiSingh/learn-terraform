@@ -8,6 +8,6 @@ output "sample1" {
   value = var.sample1
 }
 
-output "Sample-Ext" {
-  value = "Value of Sample - ${sample} & Value of Sample1 - ${sample1}"
+output "Sample -Ext" {
+  value = "The value of Sample is ${var.sample}"
 }
