@@ -42,15 +42,26 @@ output "Third_Course" {
 #now i want to display the courses details of a particular course
 
 
+#output "course_details_DevOps" {
+#  value = var.Course_Details["DevOps"]
+#}
+#
+#output "course_details_AWS" {
+#  value = var.Course_Details["AWS"]
+#}
+#
+#output "course_details_Python" {
+#  value = var.Course_Details["Python"]
+#}
+
 output "course_details_DevOps" {
-  value = var.Course_Details["DevOps"]
+  value = var.Course_Details[var.Courses[0]]
 }
 
 output "course_details_AWS" {
-  value = var.Course_Details["AWS"]
+  value = var.Course_Details[var.Courses[1]]
 }
 
 output "course_details_Python" {
-  value = var.Course_Details["Python"]
+  value = var.Course_Details[var.Courses[2]]
 }
-
