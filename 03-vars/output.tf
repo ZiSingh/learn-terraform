@@ -46,6 +46,6 @@ output "course_details_DevOps" {
   value = var.Course_Details[course[0]]
 }
 
-"",
-"AWS",
-"Python"
+#"",
+#"AWS",
+#"Python"
