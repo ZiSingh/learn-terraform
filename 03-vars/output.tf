@@ -29,3 +29,12 @@ output "Course_Details" {
 output "First_Course" {
   value = var.Courses[0]
 }
+
+output "Second_Course" {
+  value = var.Courses[1]
+
+}
+
+output "Third_Course" {
+  value = var.Courses[2]
+}
