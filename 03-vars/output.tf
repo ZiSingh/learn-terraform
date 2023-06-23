@@ -8,6 +8,6 @@ output "sample1" {
   value = var.sample1
 }
 
-output "Sample -Ext" {
+output "Sample-Ext" {
   value = "The value of Sample is ${var.sample}"
 }
