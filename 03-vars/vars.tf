@@ -14,8 +14,8 @@ variable "Course" {
 #list DataType variable
 variable "Courses" {
   default = [
-    "DevOps"
-    "AWS"
+    "DevOps",
+    "AWS",
     "Python"
   ]
 
