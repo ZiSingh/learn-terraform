@@ -22,9 +22,10 @@ output "sgid" {
   value = data.aws_security_group.selected.id
 }
 
-##to display the ami id here owner=account number of aws
-#
-output "ami" {
-  value = data.aws_ami.example.id
+##to display the default vpc id
 
+output "Default_VPC_Id" {
+  value = data.aws_vpc.selected.id
 }
+
+

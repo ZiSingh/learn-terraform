@@ -27,10 +27,17 @@ data "aws_ami" "example" {
   most_recent = true
   name_regex  = "Centos-8-DevOps-Practice"
 }
-#
 
+## to display the vpc id
 #
-##how do i print the ami id of my when i have ami name
+variable "vpc_id" {}
+
+data "aws_vpc" "selected" {
+  id = var.vpc_id
+}
+
+
+
 
 
 
