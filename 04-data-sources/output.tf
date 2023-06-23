@@ -24,8 +24,6 @@ output "sgid" {
 
 ##to display the default vpc id
 
-output "Default_VPC_Id" {
-  value = data.aws_vpc.selected.id
+output "VPC_id" {
+  value = data.aws_vpcs.vpcid.id
 }
-
-

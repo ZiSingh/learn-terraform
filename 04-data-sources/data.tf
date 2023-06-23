@@ -30,10 +30,10 @@ data "aws_ami" "example" {
 
 ## to display the vpc id
 #
-variable "vpc_id" {}
-
-data "aws_vpc" "selected" {
-  name = "Default VPC"
+data "aws_vpcs" "vpcid" {
+  tags = {
+    service = "Default VPC"
+  }
 }
 
 
