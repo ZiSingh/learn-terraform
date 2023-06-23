@@ -6,48 +6,42 @@ variable "sample1" {
   default = "Hello World"
 }
 
+
 #plain variable
-variable "course" {
+variable "Course" {
   default = "DevOps Training"
 }
 
+#list DataType variable
+variable "Courses" {
+  default = [
+    "DevOps",
+    "AWS",
+    "Python"
+  ]
 
-
-#plain variable
-#variable "course" {
-#  default = "DevOps Training"
-#}
-
-##list DataType variable
-#variable "Courses" {
-#  default = [
-#    "DevOps",
-#    "AWS",
-#    "Python"
-#  ]
-#
-#}
+}
 #
 ##map Datatype variable
-#variable "Course_Details" {
-#  default = {
-#    DevOps  = {
-#      name  = "DevOps"
-#      timings = "10am"
-#      duration  = 90
-#    }
-#    AWS = {
-#      name  = "AWS"
-#      timings = "11am"
-#      duration  = 60
-#    }
-#    Python  = {
-#      name  = "Python"
-#      timings = "12am"
-#      duration  = 40
-#    }
-#  }
-#}
+variable "Course_Details" {
+  default = {
+    DevOps  = {
+      name  = "DevOps"
+      timings = "10am"
+      duration  = 90
+    }
+    AWS = {
+      name  = "AWS"
+      timings = "11am"
+      duration  = 60
+    }
+    Python  = {
+      name  = "Python"
+      timings = "12am"
+      duration  = 40
+    }
+  }
+}
 
 #output "sample" {
 #  value = var.sample

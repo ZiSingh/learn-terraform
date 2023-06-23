@@ -12,14 +12,14 @@ output "Sample-Ext" {
   value = "The value of Sample is ${var.sample} & the value of Sample1 is ${var.sample1}"
 }
 
-output "course" {
-  value = "var.course"
+output "Course" {
+  value = var.Course
 }
 
-#output "Courses" {
-#  value = "var.Courses"
-#}
-#
-#output "Course_Details" {
-#  value = "var.Course_Details"
-#}
+output "Courses" {
+  value = var.Courses
+}
+
+output "Course_Details" {
+  value = var.Course_Details
+}
