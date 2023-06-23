@@ -18,8 +18,8 @@ output "spot_price_timestamp" {
 
 #info about the provider the Spot Price value was published.
 
-output "The_Provider" {
-  value = data.aws_ec2_spot_price.example.provider
+output "sgid" {
+  value = data.aws_security_group.selected.id
 }
 
 

@@ -15,13 +15,10 @@ data "aws_ec2_spot_price" "example" {
 
 ## to display the security group id
 #
-#data "aws_security_group" "selected" {
-#  name = "allow-all"
+data "aws_security_group" "selected" {
+  name = "allow-all"
 #}
 #
-#output "sgid" {
-#  value = data.aws_security_group.selected.id
-#}
 #
 ##to display the ami id here owner=account number of aws
 #
