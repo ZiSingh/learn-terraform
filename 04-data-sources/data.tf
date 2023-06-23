@@ -33,7 +33,7 @@ data "aws_ami" "example" {
 variable "vpc_id" {}
 
 data "aws_vpc" "selected" {
-  id = var.vpc_id
+  name = "Default VPC"
 }
 
 
