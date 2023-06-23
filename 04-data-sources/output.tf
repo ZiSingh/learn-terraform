@@ -25,7 +25,7 @@ output "sgid" {
 ##to display the default vpc id
 
 output "VPC_id" {
-  value = data.aws_vpc.dvpc.id
+  value = data.aws_vpc.vpc.id
 }
 
 output "ami_id" {

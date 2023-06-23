@@ -30,11 +30,11 @@ data "aws_ami" "example" {
 
 ## to display the vpc id
 #
-data "aws_vpcs" "dvpc" {}
+data "aws_vpcs" "vpc" {}
 
-data "aws_vpc" "dvpc" {
-  count = length(data.aws_vpcs.dvpc.ids)
-  id    = tolist(data.aws_vpcs.dvpc.ids)[count.index]
+data "aws_vpc" "vpc" {
+  count = length(data.aws_vpcs.vpc.ids)
+  id    = tolist(data.aws_vpcs.vpc.ids)[count.index]
 }
 
 data "aws_vpcs" "vpcid" {
