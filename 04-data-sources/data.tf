@@ -32,7 +32,7 @@ data "aws_ami" "example" {
 #
 data "aws_vpcs" "vpc" {}
 
-data "aws_vpc" "vpc" {
+data "aws_vpcs" "vpc" {
   count = length(data.aws_vpcs.vpc.ids)
   id    = tolist(data.aws_vpcs.vpc.ids)[count.index]
 }
