@@ -7,6 +7,8 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 
+
+
   provisioner "remote-exec" {
 
     connection {
