@@ -10,6 +10,7 @@ module "sample2" {
 }
 
 
+#these public ips will be displayed from here as its the root module
 output "public_ip_sample1" {
   value = module.sample1.public_ip
 }
@@ -17,3 +18,4 @@ output "public_ip_sample1" {
 output "public_ip_sample2" {
   value = module.sample2.public_ip
 }
+
